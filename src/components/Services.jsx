@@ -12,8 +12,8 @@
 
     const Services = () => {
     return (
-        <section className="py-16 bg-gray-100">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+        <section  className="py-16 bg-white">
+        <div data-aos="fade-up" className="max-w-6xl  mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold mb-6 text-gray-800">Our Services & Capabilities</h2>
             <p className="text-gray-600 mb-12">We provide cutting-edge solutions to elevate your business.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

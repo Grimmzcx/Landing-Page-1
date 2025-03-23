@@ -12,22 +12,37 @@ const industries = [
 const IndustriesServed = () => {
   return (
     <>
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-800">Industries We Serve</h2>
-        <p className="text-gray-600 mt-2">Empowering businesses across multiple sectors.</p>
+      <div
+  data-aos="fade-up"
+  className="container min-h-screen mx-auto px-6 py-16 text-center flex flex-col justify-center"
+>
+  {/* Heading Section */}
+  <h2 className="text-4xl font-extrabold text-gray-800">
+    Industries We Serve
+  </h2>
+  <p className="text-lg text-gray-600 mt-4 mb-12">
+    Empowering businesses across multiple sectors.
+  </p>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-          {industries.map((industry, index) => (
-            <motion.div key={index} whileHover={{ scale: 1.05 }}className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center"
-            >
-              <div className="text-emerald-600">{industry.icon}</div>
-              <h3 className="mt-4 text-lg font-semibold">{industry.title}</h3>
-              <p className="text-gray-600 mt-2">{industry.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    
+  {/* Industry Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    {industries.map((industry, index) => (
+      <motion.div
+        key={index}
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white p-8 rounded-2xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all"
+      >
+        <div className="text-5xl text-emerald-600">{industry.icon}</div>
+        <h3 className="mt-6 text-2xl font-semibold text-gray-800">
+          {industry.title}
+        </h3>
+        <p className="text-gray-600 mt-3">{industry.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
     </>
   )
 }

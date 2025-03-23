@@ -6,23 +6,23 @@ const WhyChooseUs = () => {
       icon: "✅",
       title: "High-Quality Standards",
       description:
-        "We adhere to strict quality control processes and industry-leading certifications (ISO 9001, ISO 13485, etc.), ensuring every product meets the highest standards.",
+        "We adhere to strict quality control processes and industry-leading certifications, ensuring every product meets the highest standards.",
     },
     {
       icon: "💰",
-      title: "Competitive Pricing & Efficiency",
+      title: "Competitive Pricing",
       description:
         "Our optimized production processes and bulk material sourcing allow us to provide cost-effective solutions without compromising quality.",
     },
     {
       icon: "🔧",
-      title: "Advanced Technology & Innovation",
+      title: "Advanced Technology",
       description:
-        "We leverage state-of-the-art machinery, automation, and cutting-edge manufacturing techniques to ensure precision, reliability, and scalability.",
+        "We leverage state-of-the-art machinery, automation, and cutting-edge manufacturing techniques to ensure precision and reliability.",
     },
     {
       icon: "⚡",
-      title: "Fast Turnaround Times",
+      title: "Fast Turnaround",
       description:
         "With streamlined workflows and efficient production planning, we deliver high-quality products on time to keep your business running smoothly.",
     },
@@ -35,20 +35,69 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="text-center py-16 bg-gray-100">
-      <h2 className="text-3xl font-bold mb-6">Why Choose Us?</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
-          >
-            <h3 className="text-xl font-semibold mb-2">
-              {feature.icon} {feature.title}
-            </h3>
-            <p className="text-gray-600">{feature.description}</p>
-          </div>
-        ))}
+    <section
+      id="why-choose-us"
+      className="bg-gray-50 text-gray-900 py-16 lg:py-24"
+    >
+      {/* Container */}
+      <div
+        data-aos="fade-up"
+        className="container mx-auto px-6 md:px-12 lg:px-20 text-center"
+      >
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 text-gray-800">
+          Why Choose Us?
+        </h2>
+        <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          We provide premium quality solutions by combining innovation,
+          efficiency, and advanced technology to exceed your expectations.
+        </p>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {features.slice(0, 3).map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 flex flex-col items-center text-center"
+            >
+              {/* Small Icon */}
+              <div className="flex items-center justify-center w-12 h-12 mb-4 bg-emerald-100 text-2xl text-emerald-500 rounded-full shadow-inner">
+                {feature.icon}
+              </div>
+              {/* Title */}
+              <h3 className="text-xl font-bold mb-2 text-gray-800">
+                {feature.title}
+              </h3>
+              {/* Description */}
+              <p className="text-gray-600 leading-relaxed text-sm">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Two Features Aligned */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mt-8">
+          {features.slice(3, 5).map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 flex flex-col items-center text-center"
+            >
+              {/* Small Icon */}
+              <div className="flex items-center justify-center w-12 h-12 mb-4 bg-emerald-100 text-2xl text-emerald-500 rounded-full shadow-inner">
+                {feature.icon}
+              </div>
+              {/* Title */}
+              <h3 className="text-xl font-bold mb-2 text-gray-800">
+                {feature.title}
+              </h3>
+              {/* Description */}
+              <p className="text-gray-600 leading-relaxed text-sm">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

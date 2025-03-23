@@ -26,31 +26,34 @@ function Home() {
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
             <div className="relative z-10 max-w-md text-white text-center mx-auto">
             <h1 data-aos="fade-up" className="mb-5 text-5xl font-bold">Hello there!</h1>
-            <p data-aos="fade-up" data-aos-delay="300" className="mb-5">
-              Welcome to JJM Soap and Deter gent Manufacturing.
+            <p data-aos="fade-up"  className="mb-5">
+             Welcome to JJM Soap and Detergent Manufacturing, where quality meets innovation.
             </p>
+            <button data-aos="fade-up" className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700">
+              Get Started
+            </button>
           </div>
         </section>
 
-          <section id="about"className="min-h-screen w-full flex items-center justify-center text-center relative">
+          <section id="about"className="min-h-screen w-full flex items-center justify-center text-center relative bg-white">
             <About />
           </section>
           
-          <section id="Features" className="py-16 bg-white   text-center">
+          <section id="Features" className="py-16 bg-gray-100   text-center">
             <Features />
           </section>
 
-          <section className="py-16 bg-white    text-center">
+          <section className="py-16 bg-white text-center">
             <Services />
           </section>
           
 
-          <section className="py-16 bg-white">
+          <section className="min-h-screen bg-gray-100">
             <IndustriesServed /> 
           </section>
 
-          <section className="  bg-white">
-            <WhyChooseUs   /> 
+          <section className="h-full bg-white">
+            <WhyChooseUs />
           </section>
 
           </>
