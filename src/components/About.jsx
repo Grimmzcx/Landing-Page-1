@@ -6,7 +6,7 @@ function About() {
     <div className="min-h-screen bg-white flex flex-col justify-center items-center py-16">
   <div className="container mx-auto max-w-4xl px-6 text-center">
     {/* Heading */}
-    <h2 className="text-4xl font-bold text-gray-800 mb-5" data-aos="fade-up">About Us</h2>
+    <h2 className="text-4xl font-bold text-emerald-600 mb-5" data-aos="fade-up">About Us</h2>
 
     {/* Description */}
     <p className="text-gray-600 text-lg mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="300">

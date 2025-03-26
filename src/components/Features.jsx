@@ -11,7 +11,7 @@ function Features() {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2
             data-aos="fade-up"
-            className="text-4xl font-bold mb-6 text-gray-800"
+            className="text-4xl font-bold mb-6 text-emerald-600"
           >
             Our Features
           </h2>

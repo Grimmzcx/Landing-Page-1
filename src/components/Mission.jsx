@@ -6,7 +6,7 @@ function MissionVision() {
       <div data-aos="fade-up" className="max-w-md mx-auto space-y-10 px-4">
         {/* Mission (Top) */}
         <div className="text-center">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+          <h2 className="text-2xl font-semibold mb-4 text-emerald-600">
             Our Mission
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6 text-sm">
@@ -19,7 +19,7 @@ function MissionVision() {
 
         {/* Vision (Bottom) */}
         <div className="text-center">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+          <h2 className="text-2xl font-semibold mb-4 text-emerald-600">
             Our Vision
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6 text-sm">

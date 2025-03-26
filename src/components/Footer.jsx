@@ -9,9 +9,9 @@ function Footer() {
       <div className="container mx-auto px-6 grid md:grid-cols-4 gap-8">
         {/* Brand & Mission (Left Column) */}
         <div>
-          <h3 className="text-2xl font-bold mb-3">#ChooseChoiceChosen</h3>
+          <h3 className="text-2xl font-bold text-emerald-600 mb-3">#ChooseChoiceChosen</h3>
           <p className="text-gray-400 text-sm leading-relaxed">
-          Empowering Futures, One Choice at a Time! 🚀
+            Empowering Futures, One Choice at a Time! 🚀
           </p>
           {/* Social Icons */}
           <div className="flex space-x-4 mt-4">
@@ -36,7 +36,7 @@ function Footer() {
 
         {/* Australian Brands (Second Column) */}
         <div>
-          <h3 className="text-xl font-semibold mb-3">Why JJM</h3>
+          <h3 className="text-xl font-semibold text-emerald-600 mb-3">Why JJM</h3>
           <ul className="text-gray-400 space-y-2 text-sm">
             <li>Dedicated Support</li>
             <li>High-Quality Standards</li>
@@ -50,7 +50,7 @@ function Footer() {
 
         {/* Menu (Third Column) */}
         <div>
-          <h3 className="text-xl font-semibold mb-3">MENU</h3>
+          <h3 className="text-xl font-semibold text-emerald-600 mb-3">MENU</h3>
           <ul className="text-gray-400 space-y-2 text-sm">
             <li>About us</li>
             <li>Features</li>
@@ -62,7 +62,7 @@ function Footer() {
 
         {/* Contact Us (Fourth Column) */}
         <div>
-          <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
+          <h3 className="text-xl font-semibold text-emerald-600 mb-3">Contact Us</h3>
           <p className="text-gray-400 text-sm">
             Email: negosyongpaunlad@gmail.com
           </p>

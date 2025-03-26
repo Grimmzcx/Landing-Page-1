@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
         className="container mx-auto px-6 md:px-12 lg:px-20 text-center"
       >
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 text-gray-800">
+        <h2 className="text-3xl sm:text-4xl text font-extrabold mb-6 text-emerald-600">
           Why Choose Us?
         </h2>
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
