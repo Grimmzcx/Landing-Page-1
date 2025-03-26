@@ -1,41 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
+import logo from "../assets/logo.jpg"; // Corrected path
 
-function Navbar(){
+function Navbar() {
+  // Track the active section
+  const [activeSection, setActiveSection] = useState("Home");
+
+  const menuItems = [
+    
+    { name: " About us", link: "about" },
+    { name: " Features", link: "Features" },
+    { name: "Service", link: "Services" },
+    { name: "Market", link: "IndustriesServed" },
+    { name: "Contact Us", link: "Footer" },
+  ];
+
   return (
-    <nav className="grid grid-cols-3 items-center px-6 py-4 bg-white shadow-md">
-      {/* Left Column: Logo with Stacked Text */}
-      <div className="flex flex-col items-start">
-        <span className="text-lg font-bold text-gray-900">JJM</span>
-        <span className="text-sm font-bold text-gray-900">Soap and Detergent</span>
+    <nav className="sticky top-0 z-50 grid grid-cols-3 items-center px-6 py-4 bg-white shadow-md">
+      {/* Left Column: Logo */}
+      <div className="flex-1">
+        <a href="/" className="text-xl text-green-500">
+          <img src={logo} alt="Logo" className="rounded-full w-10 h-10" />
+        </a>
       </div>
 
       {/* Center Column: Menu */}
       <ul className="hidden md:flex justify-center space-x-6 text-gray-700">
-        <li>
-          <Link to="Home" smooth={true} duration={1000} className="hover:text-emerald-600 cursor-pointer">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={1000} className="hover:text-emerald-600 cursor-pointer">
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link to="Features" smooth={true} duration={1000} className="hover:text-emerald-600 cursor-pointer">
-            Features
-          </Link>
-        </li>
-        <li>
-          <Link to="Footer" smooth={true} duration={1000} className="hover:text-emerald-600 cursor-pointer">
-            Contact
-          </Link>
-        </li>
+        {menuItems.map((item) => (
+          <li key={item.link} className="relative">
+            <Link
+              to={item.link}
+              smooth={true}
+              duration={1000}
+              className={`cursor-pointer ${
+                activeSection === item.link
+                  ? "text-emerald-600 font-bold"
+                  : "text-gray-700"
+              }`}
+              onClick={() => setActiveSection(item.link)}
+            >
+              {item.name}
+            </Link>
+            {/* Underline when active */}
+            {activeSection === item.link && (
+              <div className="absolute left-0 w-full h-[2px] bg-gray-600 mt-1" />
+            )}
+          </li>
+        ))}
       </ul>
-
+    
     </nav>
   );
-};
+}
 
 export default Navbar;

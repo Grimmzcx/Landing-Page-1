@@ -12,10 +12,7 @@ const industries = [
 const IndustriesServed = () => {
   return (
     <>
-      <div
-  data-aos="fade-up"
-  className="container min-h-screen mx-auto px-6 py-16 text-center flex flex-col justify-center"
->
+      <div data-aos="fade-up" className="container min-h-screen mx-auto px-6 py-16 text-center flex flex-col justify-center">
   {/* Heading Section */}
   <h2 className="text-4xl font-extrabold text-gray-800">
     Industries We Serve
